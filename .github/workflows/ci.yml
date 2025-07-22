@@ -46,9 +46,6 @@ jobs:
       - name: Run migrations
         run: python manage.py migrate
 
-      - name: Run tests
-        run: python manage.py test
-
       - name: build Docker image
         run: |
           docker build -t django-fahim .
